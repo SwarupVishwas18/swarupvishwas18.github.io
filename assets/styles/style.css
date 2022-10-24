@@ -447,6 +447,7 @@ blockquote{
 
 .readme-container img{
     width: 350px;
+    cursor: pointer;
 }
 
 .container .card .contentBx .size span:hover {  /* other bug */
