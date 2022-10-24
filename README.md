@@ -1,7 +1,7 @@
 # swarup-vishwas
 Portfolio about me, can checkout all my projects
 
-## Screen shots
+## Screenshots
 
 ![image](https://user-images.githubusercontent.com/91014156/197518118-b029bf2c-ce6c-46ce-86a2-33d45c5ed6da.png)
 
@@ -15,4 +15,4 @@ Portfolio about me, can checkout all my projects
 ![image](https://user-images.githubusercontent.com/91014156/197518334-0b293297-79ff-4019-bb6a-418b5bfb71e8.png)
 
 
-## Live Link : 
+## Live Link : https://swarupvishwas18.github.io/swarup-vishwas/
