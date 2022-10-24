@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Of SDV</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+    <style>l̥ō
+        .container .card:after {
+    content: "Loki";
+        }
+
+        .container .card{
+            background-image: url('./assets/images/loki.jpg');
+            transition: 1s ease-in-out all;
+        }
+
+        .container .card:hover{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/images/loki.jpg');
+            
+        }
+        .banner{
+            font-family: 'Cinzel', serif;
+            text-align: center;
+        }
+        .banner-title{
+            font-size: 5rem;
+        }
+        
+.data a{
+    text-decoration: underline;
+}
+
+
+#lines .line{
+    width: 2rem;
+    height: 1px;
+    border-bottom: 1px solid #161b21;
+}
+ul.links{
+    color: #161b21;
+}
+
+ul.links li{
+    color: #161b21;
+}
+
+ul.links li a{
+    color: currentColor;
+}
+
+
+    </style>
+  </head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1>SDV</h1>
+        </div>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#abt-me">About Me</a></li>
+            <li><a href="./index.html#soc">Social Links</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+        </ul>
+        <div id="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="mob-nav" id="mob-nav">
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#abt-me">About Me</a></li>
+            <li><a href="./index.html#soc">Social Links</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+        </ul>
+    </div>
+
+    <section class="search-section" id="search-section">
+        <form action="">
+            <input type="text" name="" id="" placeholder="Enter Text">
+            <input type="submit" value="🔍">
+            <button class="close-btn" id="close-btn">Close</button>
+        </form>
+    </section>
+   
+    <h1 class="cont-title" id="project-title">
+       Project Name
+     </h1>
+     <div class="project-header">
+        <div class="left">
+            <div class="project-name">
+                Name : <span id="project-name">Project Name</span>
+            </div>
+            <div class="project-name">
+                Description : <span id="project-desc">Project Name</span>
+            </div>
+            <div class="project-name">
+                Last Updated : <span id="project-updated">Project Name</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="tags" id="tags">
+                Languages : 
+                <span id="all-tags">
+            </span>
+            </div>
+            <div class="links">
+                <div class="more-link">
+                    <a id="git-link" target="_blank">
+                        View On Github
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <h1 class="cont-title" id="project-title">
+        Complete Description
+      </h1>
+      <div class="readme-container">
+        <div id="readme-data"></div>
+      </div>
+    <footer>
+        &copy; Swarup Deepak Vishwas - <span id="currentYr"></span>
+    </footer>
+    <script src="./assets/js/navbar.js" defer></script>
+	<script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="./assets/js/project-details.js"></script> 
+</body>
+</html>
