@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
 @font-face {
     font-family: 'madrigal';
     src: url('../font/Madrigal-mLJ92.ttf');
 }
 :root{
-    --link-col: #161b21;
-    --cols: #0d1017;
-    --bg-col: #d3ddda;
-    --nav-bg: #ABB2BF;
+    --bg-col: #161b21;
+    --nav-bg: #0d1017;
+    --cols: #d3ddda;
+    --link-col: #ABB2BF;
 }
 
 *{
@@ -22,9 +24,10 @@ h1{
 }
 
 .logo h1{
-    font-family: 'madrigal';
+    font-family: 'Kolker Brush', cursive;
     font-size: 2rem;
     letter-spacing: .2rem;
+    color: var(--cols);
 }
 
 body{
@@ -87,7 +90,7 @@ ul.links{
 
 ul.links li a{
     text-decoration: none;
-    color: var(--bg-col);
+    color: var(--cols);
 }
 
 
@@ -250,7 +253,7 @@ footer a{
 #lines .line{
     width: 2rem;
     height: 1px;
-    border-bottom: 1px solid var(--bg-col);
+    border-bottom: 1px solid var(--cols);
 }
 
 main.arena h2.main-title{
@@ -418,6 +421,12 @@ main.arena h2.main-title{
 
 .project-name span{
     font-weight: bold;
+    color: var(--cols);
+}
+
+h1 a{
+    text-decoration: none;
+    color: currentColor;
 }
 
 .readme-container{
@@ -425,7 +434,7 @@ main.arena h2.main-title{
     padding: 5%;
     word-wrap: break-word;
     width: 100%;
- 
+    overflow: scroll;
 }
 
 #readme-data{
@@ -555,7 +564,7 @@ main.form div{
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
-    color: var(--bg-col);
+    color: var(--cols);
     /* background-position: left; */
     background-position: bottom;
     background-repeat: no-repeat;
@@ -569,6 +578,7 @@ header.img-bk{
     background-repeat: no-repeat;
     background-size: cover;
     transition: all ease-in-out 3000ms;
+   
 }
 
 a{
@@ -682,6 +692,7 @@ a{
     font-size: .8rem;
     border-radius: 5px;
     cursor: pointer;
+    color: var(--bg-col);
 }
 
 .my-info{
@@ -709,8 +720,8 @@ h3{
 }
 
 .project-container{
-    background-color: var(--link-col);
-    color: var(--bg-col);
+    background-color: var(--nav-bg);
+    color: var(--cols);
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
@@ -733,6 +744,42 @@ h3{
     text-align: center;
     text-decoration: none;
     padding: .3rem .6rem;
+    cursor: pointer;
+}
+
+.more-link{
+    margin: 1rem;
+
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form input, .form button{
+    background-color: var(--nav-bg);
+    padding: .3rem .5rem;
+    font-size: 1.1rem;
+    color: var(--cols);
+    border: 1px solid #1d2228;
+    border-radius: 8px;
+    transition: all ease-in-out 300ms;
+}
+
+.form button{
+    font-size: 1rem;
+    padding: .4rem .7rem;
+}
+
+.form button:hover{
+    transform: translateY(-.4rem);
+}
+
+.form input:focus{
+    outline: none;
 }
 
 .more-link a:hover{
@@ -743,6 +790,17 @@ h3{
 .extra-data .download{
     margin-bottom: 1rem;
 }
+
+.mob-banner-title, .banner-title, .banner-body{
+    font-family: 'Kolker Brush', cursive;
+    letter-spacing: 2px;
+}
+
+.banner-body{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
@@ -826,4 +884,13 @@ h3{
     .links{
         margin-top: 2rem;
     }
+}
+
+
+.readme-container a{
+    color: #1BBFE9;
+}
+
+.readme-container a:hover{
+    color: cyan;
 }

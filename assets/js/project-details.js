@@ -21,6 +21,8 @@ for (let i = 0; i < params_arr.length; i++) {
 fetch(`https://api.github.com/repos/SwarupVishwas18/${val}`)
     .then(response => response.json())
     .then(data => {
+            console.log(document.title);
+            document.title = data['name'];
             name2.textContent = data['name'];
             title.textContent = data['name'];
             desc.textContent = data['description'];
@@ -55,7 +57,33 @@ fetch(`https://raw.githubusercontent.com/SwarupVishwas18/${val}/master/README.md
             images.forEach(img => {
                 img.addEventListener('click', function(){
                     window.open(img.src, '_blank');
-                })
+                });
             });
-    })
 
+            var as = readme.querySelectorAll('a');
+
+            as.forEach(a => {
+                a.setAttribute('target', '_blank');
+            })
+    });
+
+    const shareData = {
+        title: name2.textContent,
+        text: `This is ${name2} project created by Swarup Vishwas, visit using`,
+        url: window.location
+      }
+
+document.querySelector('#share-link').addEventListener('click', function(){
+  
+
+      try {
+        navigator.share(shareData);
+        alert("Link Has Been Shared..!!");
+    } catch (err) {
+        resultPara.textContent = `Error: ${err}`;
+      }
+});
+
+document.querySelector('#pdf-link').addEventListener('click', function(){
+    window.print();
+});
