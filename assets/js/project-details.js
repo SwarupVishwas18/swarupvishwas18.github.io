@@ -69,7 +69,7 @@ fetch(`https://raw.githubusercontent.com/SwarupVishwas18/${val}/master/README.md
 
     const shareData = {
         title: name2.textContent,
-        text: `This is ${name2} project created by Swarup Vishwas, visit using`,
+        text: `This is ${title} project created by Swarup Vishwas, visit using`,
         url: window.location
       }
 
