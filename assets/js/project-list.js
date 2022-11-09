@@ -33,6 +33,7 @@ fetch("https://api.github.com/users/SwarupVishwas18/repos?sort=created&direction
             // console.log(Math.random() * 2);
             
             arena.appendChild(projectCont);
+            document.querySelector('#loader').style.display = 'none';
         });
        
     })

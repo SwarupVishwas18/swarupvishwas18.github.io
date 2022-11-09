@@ -65,6 +65,8 @@ fetch(`https://raw.githubusercontent.com/SwarupVishwas18/${val}/master/README.md
             as.forEach(a => {
                 a.setAttribute('target', '_blank');
             })
+            document.querySelector('#loader').style.display = 'none';
+
     });
 
   
