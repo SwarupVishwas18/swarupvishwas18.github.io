@@ -253,7 +253,7 @@ footer a{
 #lines .line{
     width: 2rem;
     height: 1px;
-    border-bottom: 1px solid var(--cols);
+    border-bottom: 3px solid var(--cols);
 }
 
 main.arena h2.main-title{

@@ -39,6 +39,7 @@ fetch(`https://api.github.com/repos/SwarupVishwas18/${val}/languages`)
             sp.classList.add('grey');
             sp.textContent = key;
         tags.appendChild(sp)
+        document.querySelector('#loader').style.display = 'none';
 
         });
 
@@ -65,7 +66,6 @@ fetch(`https://raw.githubusercontent.com/SwarupVishwas18/${val}/master/README.md
             as.forEach(a => {
                 a.setAttribute('target', '_blank');
             })
-            document.querySelector('#loader').style.display = 'none';
 
     });
 
@@ -82,7 +82,7 @@ document.querySelector('#share-link').addEventListener('click', function(){
         navigator.share(shareData);
         alert("Link Has Been Shared..!!");
     } catch (err) {
-        resultPara.textContent = `Error: ${err}`;
+        alert(`Cannot execute the given request in your current browser. Sorry :(`);
       }
 });
 
