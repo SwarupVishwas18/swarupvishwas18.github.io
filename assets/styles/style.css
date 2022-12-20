@@ -17,10 +17,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter';
 }
 
 h1{
     font-family: 'Cinzel', serif;
+}
+
+.rs{
+    text-align: right;
+}
+
+.web-img{
+    margin-bottom: 3rem;
 }
 
 .logo h1{
@@ -91,11 +100,16 @@ ul.links{
 ul.links li a{
     text-decoration: none;
     color: var(--cols);
+    padding: .6rem .8rem;
+    font-weight: bold;
+    opacity: .5;
+    border-radius: 8px;
+    background: #00000054;
 }
 
 
 nav.nav-bar ul.links li a:hover{
-    opacity: .5;
+    opacity: 1;
 }
 main.details-main{
     display: flex;
@@ -160,6 +174,7 @@ input[type='submit'], .close-btn,  .search-section form input[type='text']{
 }
 
 input[type='submit']{
+    cursor: pointer;
     transform: translateX(-1rem);
 }
 
@@ -232,6 +247,7 @@ footer{
     padding: 1%;
     text-align: center;
     background-color: var(--nav-bg);
+    margin-top: 1rem;
 }
 
 footer a{
@@ -459,6 +475,15 @@ blockquote{
     cursor: pointer;
 }
 
+#sub-loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 200px; */
+}
+
 .container .card .contentBx .size span:hover {  /* other bug */
     background: #B90000;
 }
@@ -572,7 +597,7 @@ main.form div{
 }
 
 header.img-bk{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.574), rgba(0, 0, 0, 0.382)),url('../images/swarup.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.574), rgba(0, 0, 0, 0.382)),url('../images/key.jpg');
     color: var(--bg-col);
     background-position: center;
     background-repeat: no-repeat;
@@ -722,6 +747,7 @@ h3{
     align-items: center;
     justify-content: center;
     z-index: 5000;
+    /* display: none; */
 }
 
 
@@ -779,6 +805,34 @@ h3{
     gap: 1rem;
 }
 
+.contact-form{
+    text-align: center;
+}
+
+.contact-form input[type='submit']{
+    background-color: #0d1017;
+    padding: .4rem 2rem;
+    border: none;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+textarea{
+    background-color: var(--nav-bg);
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    color: var(--cols);
+    border: 1px solid #ABB2BF;
+    border-radius: 8px;
+    transition: all ease-in-out 300ms;
+    margin-bottom: 1rem;
+    width: 500px;
+}
+
+textarea:focus{
+    outline: none;
+}
 .form input, .form button{
     background-color: var(--nav-bg);
     padding: .3rem .5rem;
@@ -821,6 +875,92 @@ h3{
     font-weight: bold;
 }
 
+.readme-container a{
+    color: #1BBFE9;
+}
+
+.readme-container a:hover{
+    color: cyan;
+}
+
+.skills-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.skills-tab img{
+    padding: .5rem;
+    transition: all ease-in-out 500ms;
+}
+
+.skills-tab img:hover{
+    background-color: aliceblue;
+}
+
+.contact-main{
+    min-height: 100vh;
+    background-color: #161b21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact-main h1{
+    font-family: 'Inter';
+}
+
+.goto, .tg button{
+    background-color: #ABB2BF;
+    color: #0d1017;
+    padding: .2rem .5rem;
+    border: navajowhite;
+    cursor: pointer;
+}
+
+.goto:hover, .tg button:hover{
+    background-color: #0d1017;
+    color: #ABB2BF;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+    display: none;
+}
+
+.lang-img{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.top .tg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+}
+
+.tg a{
+    text-decoration: none;
+}
+
+#my-form{
+    display: flex;
+    gap: 1.5rem;
+}
+
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
@@ -844,9 +984,42 @@ h3{
         display: block;
         font-size: 3rem;
     }
+
+    .rs{
+        text-align: center;
+    }
+
+    .ls-rs-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #my-form{
+        flex-direction: column;
+    }
+
+    .skills-tab{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .lang-img img{
+        width: 300px;
+    }
+
+    textarea{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width:750px) {
+    textarea{
+        width: 300px;
+    }
     #lines{
         display: flex;
     }
@@ -871,9 +1044,12 @@ h3{
 
     .ls-rs-container{
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 2rem;
+    }
 
+    .ls, .rs{
+        text-align: center;
     }
 
     .skills{
@@ -906,14 +1082,6 @@ h3{
     }
 }
 
-
-.readme-container a{
-    color: #1BBFE9;
-}
-
-.readme-container a:hover{
-    color: cyan;
-}
 
 @keyframes beat {
     from {

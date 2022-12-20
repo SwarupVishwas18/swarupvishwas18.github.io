@@ -67,6 +67,8 @@ fetch(`https://raw.githubusercontent.com/SwarupVishwas18/${val}/master/README.md
                 a.setAttribute('target', '_blank');
             })
 
+            document.querySelector('#sub-loader').style.display = 'none';
+
     });
 
   
