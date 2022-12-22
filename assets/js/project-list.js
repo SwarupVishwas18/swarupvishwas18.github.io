@@ -5,12 +5,13 @@ fetch("https://api.github.com/users/SwarupVishwas18/repos?sort=created&direction
         datas.forEach(data => {
             var projectCont = document.createElement('div');
             projectCont.classList.add('project-container');
+            projectCont.setAttribute('data-aos', 'fade-up');
             var name = data['name'];
             var description = data['description'];
             var created = data['created_at'].split("T")[0];
             var url = `./viewProject.html?name=${name}`;
             projectCont.innerHTML = `
-            <div class="project" id="project">
+            <div class="project"   id="project">
             <h3>
                 ${name}
             </h3>

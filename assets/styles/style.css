@@ -178,9 +178,13 @@ input[type='submit']{
     transform: translateX(-1rem);
 }
 
-#email, #pwd{
+#email, #name , #pwd{
     background-color: var(--nav-bg);
     
+}
+
+.name{
+    font-family: 'Roboto Mono';
 }
 
 
@@ -475,6 +479,11 @@ blockquote{
     cursor: pointer;
 }
 
+.banner-sub{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
 #sub-loader{
     width: 100%;
     display: flex;
@@ -552,7 +561,7 @@ main.form div{
     margin: 5%;
 }
 
-#email, #pwd{
+#email, #name, #pwd{
     padding: 1rem;
     font-size: 1.1rem;
     margin: 1rem 0rem;
@@ -561,8 +570,30 @@ main.form div{
     color: var(--cols);
 }
 
-#email:focus, #pwd:focus{
+#email:focus, #pwd:focus, #name:focus{
     outline: none;
+    border: 1px solid goldenrod;
+}
+
+.swarup-vishwas{
+    transition: all ease-in-out 400ms;
+    cursor: pointer;
+}
+
+.swarup-vishwas:hover{
+    color: goldenrod;
+}
+
+.socials-tab{
+    align-items: flex-start;
+    text-align: justify;
+    justify-content: left;
+    gap: 3rem;
+    justify-self: flex-start;
+}
+
+.form-rs{
+    text-align: center;
 }
 
 .google-link{
@@ -586,8 +617,10 @@ main.form div{
     height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 3rem;
     justify-content: center;
+    gap: 3rem;
     font-size: 1.4rem;
     color: var(--cols);
     /* background-position: left; */
@@ -706,8 +739,9 @@ a{
 .ls-rs-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 1rem 5%;
+    gap: 10rem;
 }
 
 .grey{
@@ -805,8 +839,11 @@ h3{
     gap: 1rem;
 }
 
-.contact-form{
-    text-align: center;
+.contact-form form{
+    /* text-align: center; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 .contact-form input[type='submit']{
@@ -832,6 +869,7 @@ textarea{
 
 textarea:focus{
     outline: none;
+    border: 1px solid goldenrod;
 }
 .form input, .form button{
     background-color: var(--nav-bg);
@@ -866,13 +904,33 @@ textarea:focus{
 }
 
 .mob-banner-title, .banner-title, .banner-body{
-    font-family: 'Kolker Brush', cursive;
+    /* font-family: 'Kolker Brush', cursive; */
     letter-spacing: 2px;
 }
 
+.svg-sdv img{
+    transition: all ease-in-out 500ms;
+}
+
+.svg-sdv img:hover{
+    transform: translateX(-1rem);
+}
+
 .banner-body{
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.upper-main{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.upper-main .index-main{
+    text-align: left;
 }
 
 .readme-container a{
@@ -888,16 +946,35 @@ textarea:focus{
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    justify-self: center;
+    text-align: center;
     cursor: pointer;
+    
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--cols);
+    padding: 3rem;
+}
+
+.skills-flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
 }
 
 .skills-tab img{
     padding: .5rem;
     transition: all ease-in-out 500ms;
+    border-radius: 12px;
 }
 
 .skills-tab img:hover{
-    background-color: aliceblue;
+    background-color: var(--bg-col);
+    transform: scale(1.2);
 }
 
 .contact-main{
@@ -952,6 +1029,14 @@ textarea:focus{
     gap: 1rem;
 }
 
+.swarup-vishwas::after{
+    content: '👨‍💻';
+    animation-name: opMan;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
 .tg a{
     text-decoration: none;
 }
@@ -964,6 +1049,16 @@ textarea:focus{
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
+    .contact-form form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-form form label{
+        display: none;
+    }
     main.details-main{
         flex-direction: column-reverse;
         align-items: center;
@@ -979,6 +1074,11 @@ textarea:focus{
     }
     .banner-title{
         display: none;
+    }
+    .banner{
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
     }
     .mob-banner-title{
         display: block;
@@ -999,13 +1099,20 @@ textarea:focus{
         flex-direction: column;
     }
 
-    .skills-tab{
+    .skills-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .skills-tab{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         justify-content: space-around;
         text-align: center;
-    }
+    } */
+
+   
 
     .lang-img img{
         width: 300px;
@@ -1043,7 +1150,7 @@ textarea:focus{
     }
 
     .ls-rs-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 2rem;
     }
@@ -1080,6 +1187,10 @@ textarea:focus{
     .links{
         margin-top: 2rem;
     }
+
+    .svg-sdv{
+        display: none;
+    }
 }
 
 
@@ -1089,5 +1200,15 @@ textarea:focus{
     }
     to{
         transform: scale(1);
+    }
+}
+
+
+@keyframes opMan {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
