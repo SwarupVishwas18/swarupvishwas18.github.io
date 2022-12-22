@@ -680,6 +680,26 @@ a{
     flex-direction: row-reverse;
 }
 
+.rs{
+    background-color: var(--cols);
+}
+
+.sv-img{
+    transform: translate(-1rem ,-1rem);
+    transition: all ease-in-out  500ms;
+    cursor: pointer;
+}
+
+.sv-img:hover{
+    transform: translate(0rem, 0rem);
+}
+
+button, .more-link a{
+    background-color: rgba(17, 25, 40, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
 
 /* Middle Device Media Query */
 
@@ -957,6 +977,7 @@ textarea:focus{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--cols);
     padding: 3rem;
+    border-radius: 12px;
 }
 
 .skills-flex{
@@ -969,7 +990,7 @@ textarea:focus{
 .skills-tab img{
     padding: .5rem;
     transition: all ease-in-out 500ms;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .skills-tab img:hover{
