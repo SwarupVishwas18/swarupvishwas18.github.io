@@ -18,6 +18,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter';
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+body{
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    
 }
 
 h1{
@@ -182,6 +190,28 @@ input[type='submit']{
     background-color: var(--nav-bg);
     
 }
+
+#project-title{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: ; */
+    margin: 0;
+}
+
+#background-bann{
+    /* background-image: url('laptop.jpg'); */
+    background-position: center;
+    background-size: cover;
+    /* background-color: #1d2228; */
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* #background-bann:hover{
+    transform: scale(1.1);
+} */
 
 .name{
     font-family: 'Roboto Mono';
@@ -668,7 +698,8 @@ a{
 .cont-title{
     text-align: center;
     margin: 2rem;
-    font-size: 2.5rem;
+    font-size: 3.4rem;
+   
 }
 
 .data a{

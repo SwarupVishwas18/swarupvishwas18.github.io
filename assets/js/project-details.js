@@ -10,6 +10,7 @@ var readme = document.querySelector('#readme-data');
 const queryString = window.location.search;
 let paramString = queryString.split('?')[1];
 let params_arr = paramString.split('&');
+let bann = document.querySelector('#background-bann')
 var val = '';
 for (let i = 0; i < params_arr.length; i++) {
    let pair = params_arr[i].split('=');
@@ -71,6 +72,21 @@ fetch(`https://raw.githubusercontent.com/SwarupVishwas18/${val}/master/README.md
 
     });
 
+
+// var pic_url = `https://raw.githubusercontent.com/SwarupVishwas18/${val}/main/zkar-bg.jpg`
+var pic_url = `https://raw.githubusercontent.com/SwarupVishwas18/${val}/master/zkar-bg.jpg`
+fetch(pic_url)
+    .then(response => {
+        console.log(response.status);
+        if(response.status == 404){
+            bann.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("./laptop.jpg")`
+        }
+        else if(response.status == 200){
+            bann.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("${pic_url}")`
+        }
+    })
+   
+
   
 document.querySelector('#share-link').addEventListener('click', function(){
   
@@ -91,3 +107,14 @@ document.querySelector('#share-link').addEventListener('click', function(){
 document.querySelector('#pdf-link').addEventListener('click', function(){
     window.print();
 });
+
+function imageExists(image_url){
+
+    var http = new XMLHttpRequest();
+
+    http.open('HEAD', image_url, false);
+    http.send();
+
+    return http.status != 404;
+
+}
