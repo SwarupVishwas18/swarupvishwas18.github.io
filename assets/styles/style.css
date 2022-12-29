@@ -22,6 +22,19 @@
     -webkit-print-color-adjust: exact;
 }
 
+.black, .white{
+    transition: all ease-in-out 500ms;
+}
+
+.black:hover{
+    background-color: black;
+    color: black;
+}
+
+.white:hover{
+    background-color: var(--cols);
+}
+
 body{
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
@@ -699,7 +712,11 @@ a{
     text-align: center;
     margin: 2rem;
     font-size: 3.4rem;
-   
+    transition: all ease-in-out 400ms;
+}
+
+.cont-title:hover{
+    color: gold;
 }
 
 .data a{
@@ -735,6 +752,7 @@ button, .more-link a{
 /* Middle Device Media Query */
 
 @media screen and (max-width: 1150px) {
+  
     article.movie-header, article.movie-sub-header{
         flex-direction: column;
         align-items: flex-start;
@@ -1003,10 +1021,12 @@ textarea:focus{
     
 }
 
+
+
 .skills-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: var(--cols);
+    /* background-color: var(--cols); */
     padding: 3rem;
     border-radius: 12px;
 }
@@ -1101,6 +1121,12 @@ textarea:focus{
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
+    .socials-tab{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: space-around;
+    }
     .contact-form form{
         flex-direction: column;
         align-items: center;
