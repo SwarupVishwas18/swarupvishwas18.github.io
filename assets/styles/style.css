@@ -20,8 +20,13 @@
     font-family: 'Inter';
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+    /* cursor: pointer; */
+    cursor: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="100"><text y="28" font-size="20">🌛</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'),auto;
 }
 
+*:active{
+    cursor: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="100"><text y="28" font-size="20">🌞</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'),auto;
+}
 .black, .white{
     transition: all ease-in-out 500ms;
 }
