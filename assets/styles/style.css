@@ -97,7 +97,7 @@ nav.nav-bar{
 }
 
 ul.links{
-    display: flex;
+    display:  flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -782,6 +782,10 @@ button, .more-link a{
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.demo-link a{
+    background-color: #ff0;
+}
+
 
 /* Middle Device Media Query */
 
@@ -928,6 +932,10 @@ h3{
     text-decoration: none;
     padding: .3rem .6rem;
     cursor: pointer;
+}
+
+.demo-link a{
+    background-color: goldenrod;
 }
 
 .more-link{
@@ -1152,9 +1160,17 @@ textarea:focus{
     gap: 1.5rem;
 }
 
+.repo-link-coll{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
+    .repo-link-coll{
+        grid-template-columns: 1fr;
+    }
     .socials-tab{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
