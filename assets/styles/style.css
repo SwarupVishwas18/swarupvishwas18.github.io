@@ -1074,11 +1074,16 @@ textarea:focus{
 }
 
 .skills-flex{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+
 
 .skills-tab img{
     padding: .5rem;
@@ -1228,7 +1233,7 @@ textarea:focus{
     }
 
     .skills-flex{
-        flex-direction: column;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 

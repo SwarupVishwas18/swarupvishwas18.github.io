@@ -1,317 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="mn3TZ9nEPmX2u5L0hZVp5CStoID3VnXHa5nmhBWKl7k" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="mn3TZ9nEPmX2u5L0hZVp5CStoID3VnXHa5nmhBWKl7k"
+    />
     <title>Swarup Vishwas</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-    <meta name="description" content="Hi, I am Swarup Deepak Vishwas a Web Developer from Vishwakarma Institute of Technology, Pune. ">
-    
-    <meta name=”robots” content="index, follow">
-    
-     <meta name="keywords" content="HTML, CSS, JavaScript, Swarup Vishwas, Swarup Deepak Vishwas, Web Developer, PHP, Swarup Biswas">
-  <meta name="author" content="Swarup Vishwas">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Hi, I am Swarup Deepak Vishwas a Web Developer from Vishwakarma Institute of Technology, Pune. "
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-<link rel="manifest" href="assets/images/site.webmanifest">
+    <meta name="”robots”" content="index, follow" />
+
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Swarup Vishwas, Swarup Deepak Vishwas, Web Developer, PHP, Swarup Biswas"
+    />
+    <meta name="author" content="Swarup Vishwas" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
 
     <style>
-    .container .card:after {
-    content: "Loki";
-        }
+      .container .card:after {
+        content: "Loki";
+      }
 
-        .container .card{
-            background-image: url('./assets/images/loki.jpg');
-            transition: 1s ease-in-out all;
-        }
+      .container .card {
+        background-image: url("./assets/images/loki.jpg");
+        transition: 1s ease-in-out all;
+      }
 
-        .container .card:hover{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/images/loki.jpg');
-            
-        }
-        .banner{
-            font-family: 'Cinzel', serif;
-            text-align: center;
-        }
-        .banner-title{
-            font-size: 5rem;
-        }
+      .container .card:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./assets/images/loki.jpg");
+      }
+      .banner {
+        font-family: "Cinzel", serif;
+        text-align: center;
+      }
+      .banner-title {
+        font-size: 5rem;
+      }
 
-        #name, #email{
-            width: 500px;
+      #name,
+      #email {
+        width: 500px;
+      }
+
+      input[type="submit"]:hover {
+        transform: scale(1.1);
+      }
+
+      .data a {
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 900px) {
+        #name,
+        #email {
+          width: 300px;
         }
-
-        input[type="submit"]:hover{
-            transform: scale(1.1);
-        }
-        
-.data a{
-    text-decoration: underline;
-}
-
-
-@media screen and (max-width: 900px) {
-    #name, #email{
-            width: 300px;
-        }
-        
-}
-        
-        
-
+      }
     </style>
   </head>
-<body>
+  <body>
     <div id="loader">
-        <img src="./assets/images/Infinity-2.3s-200px.svg" alt="">
-        <h1 class="loading-text">
-            SDV - Loading
-        </h1>
+      <img src="./assets/images/Infinity-2.3s-200px.svg" alt="" />
+      <h1 class="loading-text">SDV - Loading</h1>
     </div>
-    <header class="img-bk"  data-aos="fade-up">
-    <nav class="nav-bar">
+    <header class="img-bk" data-aos="fade-up">
+      <nav class="nav-bar">
         <div class="logo">
-            <h1>
-                <a href="./index.html">
-                    SDV
-                </a>
-            </h1>
+          <h1>
+            <a href="./index.html"> SDV </a>
+          </h1>
         </div>
         <ul class="links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html#abt-me">About Me</a></li>
-            <li><a href="./index.html#soc">Social Links</a></li>
-            <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#abt-me">About Me</a></li>
+          <li><a href="./index.html#soc">Social Links</a></li>
+          <li><a href="./projects.html">Projects</a></li>
         </ul>
         <div id="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-    </nav>
-    <div class="mob-nav" id="mob-nav">
+      </nav>
+      <div class="mob-nav" id="mob-nav">
         <ul class="links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html#abt-me">About Me</a></li>
-            <li><a href="./index.html#soc">Social Links</a></li>
-            <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#abt-me">About Me</a></li>
+          <li><a href="./index.html#soc">Social Links</a></li>
+          <li><a href="./projects.html">Projects</a></li>
         </ul>
-    </div>
+      </div>
 
-    <section class="search-section" id="search-section">
+      <section class="search-section" id="search-section">
         <form action="">
-            <input type="text" name="" id="" placeholder="Enter Text">
-            <input type="submit" value="🔍">
-            <button class="close-btn" id="close-btn">Close</button>
+          <input type="text" name="" id="" placeholder="Enter Text" />
+          <input type="submit" value="🔍" />
+          <button class="close-btn" id="close-btn">Close</button>
         </form>
-    </section>
-    <div class="upper-main">
-
-    <main class="index-mail̥n">
-        <div class="banner">
+      </section>
+      <div class="upper-main">
+        <main class="index-mail̥n">
+          <div class="banner">
             <div class="banner-body">
-                👋 Hi everybody, I am Web Developer from Pune, India    
+              👋 Hi everybody, I am Web Developer from Pune, India
             </div>
-        <h1 class="banner-title swarup-vishwas">
-            Swarup Vishwas
-        </h1>
-        <h1 class="mob-banner-title">
-            SDV
-        </h1>
-        <div class="banner-sub">
-            Things aren’t always <span class="black"> #000000  </span> and  <span class="white"> #FFFFFF  </span>
+            <h1 class="banner-title swarup-vishwas">Swarup Vishwas</h1>
+            <h1 class="mob-banner-title">SDV</h1>
+            <div class="banner-sub">
+              Things aren’t always <span class="black"> #000000 </span> and
+              <span class="white"> #FFFFFF </span>
+            </div>
+          </div>
+        </main>
+        <div class="svg-sdv">
+          <img src="./assets/images/sdv.svg" height="500" alt="" />
         </div>
+      </div>
+    </header>
+    <h1 class="cont-title" id="abt-me" data-aos="fade-up">About Me</h1>
+    <div class="ls-rs-container" data-aos="fade-up">
+      <div class="ls">
+        <h3>This is ME:</h3>
+        <div class="name">
+          👋 Hello, world! I am Swarup, a full-stack engineer from Pune, India.
+          <br />
+          I love to design and code 👨🏼‍💻. I build high-quality applications for
+          the web. I concentrate on writing clean, understandable and testable
+          code. <br />
+          Currently, I'm pursuing my undergrads 👨‍🎓 in Computer Science
+          Engineering at the Vishwakarma Institute of Technology, Pune. I love
+          working in and as a team. I'm always looking for opportunities to
+          learn and grow. <br />
+          When I'm not programming, I focus on my hobbies which are: Other than
+          coding, I'm passionate about Movies 🎬 . <br />
+        </div>
+      </div>
+      <div class="rs">
+        <img
+          src="./assets/images/ssvv.jpg"
+          class="sv-img"
+          width="300px"
+          alt=""
+        />
+      </div>
     </div>
-    </main>
-    <div class="svg-sdv">
-        <img src="./assets/images/sdv.svg" height="500" alt="">
+    <div class="my-info">
+      <div class="more-btn" data-aos="fade-up">
+        <div class="more-link">
+          <a href="./projects.html" target="_blank">View My Projects List</a>
+        </div>
+      </div>
     </div>
-</div>
-</header>
-    <h1 class="cont-title" id="abt-me"  data-aos="fade-up">
-        About Me
-     </h1>
-     <div class="ls-rs-container"  data-aos="fade-up">
-        <div class="ls">
-            <h3>This is ME:</h3>
-            <div class="name">
-                👋 Hello, world! I am Swarup, a full-stack engineer from Pune, India. <br>
-                I love to design and code 👨🏼‍💻. I build high-quality applications for the web. I concentrate on writing clean, understandable and testable code. <br> 
-                Currently, I'm pursuing my undergrads 👨‍🎓 in Computer Science Engineering at the Vishwakarma Institute of Technology, Pune. I love working in and as a team. I'm always looking for opportunities to learn and grow. <br>
-                When I'm not programming, I focus on my hobbies which are: Other than coding, I'm passionate about Movies 🎬 . <br>
-            </div>
-        </div>
-        <div class="rs">
-            <img src="./assets/images/ssvv.jpg" class="sv-img" width="300px" alt="">
-        </div>
-     </div>
-     <div class="my-info">
-      
-        <div class="more-btn"  data-aos="fade-up">
-            <div class="more-link">
-                <a href="./projects.html" target="_blank">View My Projects List</a>
-            </div>
-        </div>
-     </div>
-     <h1 class="cont-title"  data-aos="fade-up">
-        Proficient Skills
-     </h1>
-<div class="skills-flex">
-     <div class="skills-tab skills-grid"  data-aos="fade-up">
-            <img src="./assets/icons/html.png" height="60px" alt="">
-            <img src="./assets/icons/css-3.png" height="60px" alt="">
-            <img src="./assets/icons/js.png" height="60px" alt="">
-            <img src="./assets/icons/python.png" height="60px" alt="">
-            <img src="./assets/icons/java.png" height="60px" alt="">
-            <img src="./assets/icons/mysql.png" height="60px" alt="">
-            <img src="./assets/icons/api.png" height="60px" alt="">
-            <img src="./assets/icons/php.png" height="60px" alt="">
-     </div>
-     <p class="lang-img"  data-aos="fade-up" ><img width="500px" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=swarupvishwas18&show_icons=true&locale=en&layout=compact" alt="swarupvishwas18" /></p>
-   
+    <h1 class="cont-title" data-aos="fade-up">Proficient Skills</h1>
+    <div class="skills-flex">
+      <div class="skills-tab skills-grid" data-aos="fade-up">
+        <img src="./assets/icons/html.png" height="60px" alt="" />
+        <img src="./assets/icons/css-3.png" height="60px" alt="" />
+        <img src="./assets/icons/js.png" height="60px" alt="" />
+        <img src="./assets/icons/python.png" height="60px" alt="" />
+        <img src="./assets/icons/java.png" height="60px" alt="" />
+        <img src="./assets/icons/mysql.png" height="60px" alt="" />
+        <img src="./assets/icons/api.png" height="60px" alt="" />
+        <img src="./assets/icons/php.png" height="60px" alt="" />
+      </div>
+      <p class="lang-img" data-aos="fade-up">
+        <img
+          width="500px"
+          align="center"
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=swarupvishwas18&show_icons=true&locale=en&layout=compact"
+          alt="swarupvishwas18"
+        />
+      </p>
+      <div data-aos="fade-up" class="commits-img">
+        <img
+          src="https://camo.githubusercontent.com/ebc34deed64f28eb7dad4a98e18b7595ae3987fadb2bf306b0ee4481f85e21e8/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d73776172757076697368776173313826"
+          alt=""
+        />
+      </div>
+      <div data-aos="fade-up" class="other-commit">
+        <img
+          src="https://camo.githubusercontent.com/d5bde971229a5ff885f729f2426818b5df6ffa3ea6be9261a3888800dbe41443/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7377617275707669736877617331382673686f775f69636f6e733d74727565266c6f63616c653d656e"
+          alt=""
+        />
+      </div>
     </div>
-    
-    <h1 class="cont-title" id="soc"  data-aos="fade-up">
-       Connect With Me
-    </h1>
-            <div class="contact-form"  data-aos="fade-up">
-                <form action="https://formsubmit.co/e652015d02fddf7e1bbc74840cb108d4" method="POST" autocomplete="off">
-                    <div class="form-ls">
-                    <input type="hidden" name="_subject" value="Hurray! New Contact">
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_next" value="https://swarupvishwas18.github.io/swarup-vishwas/thanks.html">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_autoresponse" value="Thank You for Connecting with me, your response matters a lot..!!">
-                    <label for="name">Enter your name</label> <br>
-                    <input type="text" name="name" id="name" placeholder="Enter your Name" required> <br>
-                    <label for="email">Enter your mail</label> <br>                
-                    <input type="email" name="email" id="email" placeholder="Enter your Email Address" required> <br>
-                    </div>
-                    <div class="form-rs">
-                    <textarea name="thoughts" id="" placeholder="Enter your thoughts" rows="10" required></textarea><br>
-                    <input type="submit" value="Submit">
-                </div>
-                </form>
-            </div>
-           
-            <div  class="skills-tab socials-tab">
-                <img src="./assets/icons/telegram.png" id="telegram" height="45px" alt="">
-                <img src="./assets/icons/instagram.png" id="instagram" height="45px" alt="">
-                <img src="./assets/icons/twitter.png" id="twitter" height="45px" alt="">
-                <img src="./assets/icons/github.png" id="github" height="45px" alt="">
-                <img src="./assets/icons/linkedin.png" id="linkedin" height="45px" alt="">
-        </div>
 
-        <div id="tg-top" class="top">
-            <div id="tg" class="tg">
-                <h1>
-                    Telegram QR
-                </h1>
-                <img src="./assets/images/TG.jpg" height="300px" alt="Telegram QR">
-                <div class="username">
-                    @lucifer_morningstar
-                </div>
-                <a href="https://t.me/lucifer_morningstar_12" target="_blank">
-                    <button>Click to Join</button>
-                </a>
-                <button class="close-top">
-                    Close
-                </button>
-            </div>
+    <h1 class="cont-title" id="soc" data-aos="fade-up">Connect With Me</h1>
+    <div class="contact-form" data-aos="fade-up">
+      <form
+        action="https://formsubmit.co/swarupvishwas000@gmail.com"
+        method="POST"
+        autocomplete="off"
+      >
+        <div class="form-ls">
+          <input type="hidden" name="_subject" value="Hurray! New Contact" />
+          <input type="text" name="_honey" style="display: none" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://swarupvishwas18.github.io/swarup-vishwas/thanks.html"
+          />
+          <input type="hidden" name="_template" value="box" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank You for Connecting with me, your response matters a lot..!!"
+          />
+          <label for="name">Enter your name</label> <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Name"
+            required
+          />
+          <br />
+          <label for="email">Enter your mail</label> <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email Address"
+            required
+          />
+          <br />
         </div>
+        <div class="form-rs">
+          <textarea
+            name="thoughts"
+            id=""
+            placeholder="Enter your thoughts"
+            rows="10"
+            required
+          ></textarea
+          ><br />
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
 
-        <div id="in-top" class="top">
-            <div id="tg" class="tg">
-                <h1>
-                    Instagram QR
-                </h1>
-                <img src="./assets/images/instagram-qr.jpg" height="300px" alt="Instagram QR">
-                <div class="username">
-                    @swarup.vishwas
-                </div>
-                <a href="https://www.instagram.com/swarup.vishwas/" target="_blank">
-                    <button>Click to Join</button>
-                </a>
-                <button class="close-top">
-                    Close
-                </button>
-            </div>
-        </div>
+    <div class="skills-tab socials-tab">
+      <img
+        src="./assets/icons/telegram.png"
+        id="telegram"
+        height="45px"
+        alt=""
+      />
+      <img
+        src="./assets/icons/instagram.png"
+        id="instagram"
+        height="45px"
+        alt=""
+      />
+      <img src="./assets/icons/twitter.png" id="twitter" height="45px" alt="" />
+      <img src="./assets/icons/github.png" id="github" height="45px" alt="" />
+      <img
+        src="./assets/icons/linkedin.png"
+        id="linkedin"
+        height="45px"
+        alt=""
+      />
+    </div>
 
-        <div id="tw-top" class="top">
-            <div id="tg" class="tg">
-                <h1>
-                    Twitter QR
-                </h1>
-                <img src="./assets/images/twitter-qr.jpg" height="300px" alt="Twitter QR">
-                <div class="username">
-                    @sdvishwas2312
-                </div>
-                <a href="https://twitter.com/sdvishwas2312" target="_blank">
-                    <button>Click to Join</button>
-                </a>
-                <button class="close-top">
-                    Close
-                </button>
-            </div>
-        </div>
+    <div id="tg-top" class="top">
+      <div id="tg" class="tg">
+        <h1>Telegram QR</h1>
+        <img src="./assets/images/TG.jpg" height="300px" alt="Telegram QR" />
+        <div class="username">@lucifer_morningstar</div>
+        <a href="https://t.me/lucifer_morningstar_12" target="_blank">
+          <button>Click to Join</button>
+        </a>
+        <button class="close-top">Close</button>
+      </div>
+    </div>
 
-        <div id="git-top" class="top">
-            <div id="tg" class="tg">
-                <h1>
-                    Github QR
-                </h1>
-                <img src="./assets/images/QR GITHUB.png" height="300px" alt="Github QR">
-                <div class="username">
-                    @SwarupVishwas18
-                </div>
-                <a href="https://github.com/SwarupVishwas18" target="_blank">
-                    <button>Click to Join</button>
-                </a>
-                <button class="close-top">
-                    Close
-                </button>
-            </div>
-        </div>
+    <div id="in-top" class="top">
+      <div id="tg" class="tg">
+        <h1>Instagram QR</h1>
+        <img
+          src="./assets/images/instagram-qr.jpg"
+          height="300px"
+          alt="Instagram QR"
+        />
+        <div class="username">@swarup.vishwas</div>
+        <a href="https://www.instagram.com/swarup.vishwas/" target="_blank">
+          <button>Click to Join</button>
+        </a>
+        <button class="close-top">Close</button>
+      </div>
+    </div>
 
-        <div id="li-top" class="top">
-            <div id="tg" class="tg">
-                <h1>
-                    Linked In QR
-                </h1>
-                    <img src="./assets/images/linkedin-qr.png" height="300px" alt="Linked In QR">
-                <div class="username">
-                    Swarup Vishwas
-                </div>
-                <a href="https://www.linkedin.com/in/swarup-vishwas-8895221b9/" target="_blank">
-                    <button>Click to Join</button>
-                </a>
-                <button class="close-top">
-                    Close
-                </button>
-            </div>
-        </div>
-        
-    <footer>
-        &copy; Swarup Deepak Vishwas - <span id="currentYr"></span>
-    </footer>
-  
+    <div id="tw-top" class="top">
+      <div id="tg" class="tg">
+        <h1>Twitter QR</h1>
+        <img
+          src="./assets/images/twitter-qr.jpg"
+          height="300px"
+          alt="Twitter QR"
+        />
+        <div class="username">@sdvishwas2312</div>
+        <a href="https://twitter.com/sdvishwas2312" target="_blank">
+          <button>Click to Join</button>
+        </a>
+        <button class="close-top">Close</button>
+      </div>
+    </div>
+
+    <div id="git-top" class="top">
+      <div id="tg" class="tg">
+        <h1>Github QR</h1>
+        <img
+          src="./assets/images/QR GITHUB.png"
+          height="300px"
+          alt="Github QR"
+        />
+        <div class="username">@SwarupVishwas18</div>
+        <a href="https://github.com/SwarupVishwas18" target="_blank">
+          <button>Click to Join</button>
+        </a>
+        <button class="close-top">Close</button>
+      </div>
+    </div>
+
+    <div id="li-top" class="top">
+      <div id="tg" class="tg">
+        <h1>Linked In QR</h1>
+        <img
+          src="./assets/images/linkedin-qr.png"
+          height="300px"
+          alt="Linked In QR"
+        />
+        <div class="username">Swarup Vishwas</div>
+        <a
+          href="https://www.linkedin.com/in/swarup-vishwas-8895221b9/"
+          target="_blank"
+        >
+          <button>Click to Join</button>
+        </a>
+        <button class="close-top">Close</button>
+      </div>
+    </div>
+
+    <footer>&copy; Swarup Deepak Vishwas - <span id="currentYr"></span></footer>
+
     <script src="./assets/js/navbar.js" defer></script>
     <script src="./assets/js/data.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
-        </script>
-</body>
+      AOS.init();
+    </script>
+  </body>
 </html>
