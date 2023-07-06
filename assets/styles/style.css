@@ -1173,6 +1173,9 @@ textarea:focus{
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
+    .cont-title{
+        font-size: 2rem;
+    }
     .repo-link-coll{
         grid-template-columns: 1fr;
     }
