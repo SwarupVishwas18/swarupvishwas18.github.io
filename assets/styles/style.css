@@ -102,6 +102,17 @@ ul.links{
     justify-content: center;
     gap: 2rem;
     list-style: none;
+    background-color: #00000067;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.course-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
 }
 
 .logo{
@@ -130,7 +141,7 @@ ul.links li a{
     font-weight: bold;
     opacity: .5;
     border-radius: 8px;
-    background: #00000054;
+    /* background: #00000054; */
 }
 
 
@@ -554,6 +565,49 @@ blockquote{
     cursor: pointer;
 }
 
+.course-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: var(--nav-bg);
+}
+
+.course-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.course-card:nth-child(even){
+    flex-direction: row-reverse;
+ 
+}
+
+.course-content{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.course-links{
+    color: #1BBFE9;
+}
+
+.img-course{
+    flex-shrink: 1;
+    border-radius: 8px;
+}
+
+.img-course img{
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+}
+
 .container .card .contentBx .color span:nth-child(2) {
      background: #1BBFE9;
 }
@@ -790,7 +844,8 @@ button, .more-link a{
 /* Middle Device Media Query */
 
 @media screen and (max-width: 1150px) {
-  
+
+    
     article.movie-header, article.movie-sub-header{
         flex-direction: column;
         align-items: flex-start;
@@ -1173,6 +1228,17 @@ textarea:focus{
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
+    .course-card, .course-card:nth-child(even){
+        flex-direction: column;
+    padding: 1rem;
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .img-course img{
+        width: inherit;
+    }
+  
     .cont-title{
         font-size: 2rem;
     }

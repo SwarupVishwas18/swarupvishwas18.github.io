@@ -29,7 +29,8 @@ fetch(`https://api.github.com/repos/SwarupVishwas18/${val}`)
     desc.textContent = data["description"];
     updated.textContent = data["updated_at"].split("T")[0];
     link.href = data["html_url"];
-    if (data["homepage"] != null) {
+    if (data["homepage"] != null && data["homepage"] !== "") {
+      console.log(data["homepage"] != "");
       document.getElementById("demo-link").href = data["homepage"];
     } else {
       document.getElementById("demo-link-cont").style.display = "none";
