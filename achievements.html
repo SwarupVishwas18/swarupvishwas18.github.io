@@ -57,7 +57,7 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./index.html#abt-me">About Me</a></li>
         <li><a href="./index.html#soc">Social Links</a></li>
-       <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
         <li><a href="./achievements.html">Achievements</a></li>
       </ul>
       <div id="lines">
@@ -176,7 +176,7 @@
       <h1>Extra Curricular Activities</h1>
       <div class="course-card">
         <div class="img-course">
-          <img src="" alt="" />
+          <img id="image-vk" src="./assets/images/vk2.jpg" alt="" />
         </div>
         <div class="course-content">
           <h2 class="course-title">Event Head - Vishwakarandak'23</h2>
@@ -218,7 +218,33 @@
             >
           </div>
         </div>
+
+       
       </div>
+
+      <div class="course-card">
+        <div class="img-course">
+          <img src="./assets/images/ideathon.png" alt="" />
+        </div>
+        <div class="course-content">
+          <h2 class="course-title">IngenuityX Ideathon By IEEE Participation</h2>
+          <div class="course-desc">
+            As the head of Spoken Charades in Vishwakarandak'23 organized by
+            EPEC, VIT Pune, I showcased exemplary leadership by efficiently
+            managing a team of volunteers, designing an engaging competition,
+            and ensuring a smooth execution of the event. I fostered a
+            collaborative environment, provided guidance to participants, and
+            paid meticulous attention to logistical details, resulting in a
+            successful and memorable experience for all involved.
+          </div>
+          <div class="course-links">
+            <a
+              href="https://swarupvishwas18.github.io/SpendWise/"
+              target="_blank"
+              >Project Data</a
+            >
+          </div>
+        </div>
     </div>
 
     <div class="course-section">
@@ -266,5 +292,18 @@
 
     <footer>&copy; Swarup Deepak Vishwas - <span id="currentYr"></span></footer>
     <script src="./assets/js/navbar.js" defer></script>
+    <script>
+      const images = ["vk.jpg", "vk2.jpg", "vk3.jpg", "vk4.jpg", "vk5.jpg"];
+
+      var i = 0;
+      setInterval(() => {
+        i++;
+        if (i == 5) {
+          i = 0;
+        }
+        document.getElementById("image-vk").src =
+          "./assets/images/" + images[i];
+      }, 5000);
+    </script>
   </body>
 </html>

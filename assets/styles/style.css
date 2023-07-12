@@ -732,6 +732,7 @@ main.form div{
 
 .swarup-vishwas:hover{
     color: goldenrod;
+    text-shadow: -2px -2px 8px goldenrod;
 }
 
 .socials-tab{
@@ -853,6 +854,7 @@ a{
 
 .cont-title:hover{
     color: gold;
+    text-shadow: -2px -2px 8px goldenrod;
 }
 
 .data a{
@@ -1263,6 +1265,12 @@ textarea:focus{
 
 .tg a{
     text-decoration: none;
+}
+
+::selection{
+    background-color: transparent;
+    color: goldenrod;
+    text-shadow: -2px -2px 12px goldenrod;
 }
 
 #my-form{
