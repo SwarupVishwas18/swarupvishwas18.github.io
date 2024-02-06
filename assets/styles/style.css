@@ -1286,6 +1286,15 @@ textarea:focus{
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
+
+    .index-project-card{
+        width: 90vw;
+    }
+
+    .index-project-card>.project-image>img{
+        width: 100%;
+        object-fit: contain;
+    }
     .projects-grid{
         grid-template-columns: 1fr;
     }
