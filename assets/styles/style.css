@@ -21,12 +21,9 @@
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
     /* cursor: pointer; */
-    cursor: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="100"><text y="28" font-size="20">🌛</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'),auto;
 }
 
-*:active{
-    cursor: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="100"><text y="28" font-size="20">🌞</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'),auto;
-}
+
 .black, .white{
     transition: all ease-in-out 500ms;
 }
@@ -730,10 +727,7 @@ main.form div{
     cursor: pointer;
 }
 
-.swarup-vishwas:hover{
-    color: goldenrod;
-    text-shadow: -2px -2px 8px goldenrod;
-}
+
 
 .socials-tab{
     align-items: flex-start;
@@ -852,10 +846,7 @@ a{
     z-index: 300;
   }
 
-.cont-title:hover{
-    color: gold;
-    text-shadow: -2px -2px 8px goldenrod;
-}
+
 
 .data a{
     color: currentColor;
@@ -1267,11 +1258,7 @@ textarea:focus{
     text-decoration: none;
 }
 
-::selection{
-    background-color: transparent;
-    color: goldenrod;
-    text-shadow: -2px -2px 12px goldenrod;
-}
+
 
 #my-form{
     display: flex;
@@ -1281,6 +1268,21 @@ textarea:focus{
 .repo-link-coll{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.project-link a, .project-linkers a{
+    background-color: #ABB2BF;
+    color: #1d2228;
+    padding: .5rem 2rem;
+    font-size: small;
+    text-decoration: none;
+    transition: all ease-in-out 400ms;
+    border-radius: 12px;
+}
+
+.project-link a:hover, .project-linkers a:hover{
+    background-color: #1d2228;
+    color: #ABB2BF;
 }
 
 /* Small Devices Media Query */
