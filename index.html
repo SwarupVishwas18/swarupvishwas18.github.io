@@ -99,6 +99,27 @@
           width: 300px;
         }
       }
+
+      @media screen and (max-width: 1100px) {
+        .skills-flex {
+          grid-template-columns: 1fr;
+          align-items: center;
+        }
+
+        .contact-form {
+          flex-direction: column;
+        }
+
+        .skills-grid {
+          align-items: center;
+          text-align: center;
+        }
+      }
+
+      .logo h1 {
+        font-family: "Jura", sans-serif;
+        font-weight: 100;
+      }
     </style>
   </head>
   <body>
@@ -109,9 +130,7 @@
     <header class="img-bk" data-aos="fade-up">
       <nav class="nav-bar">
         <div class="logo">
-          <h1>
-            <a href="./index.html"> SDV </a>
-          </h1>
+          <h1>#Swarup</h1>
         </div>
         <ul class="links">
           <li><a href="./index.html">Home</a></li>
@@ -199,35 +218,38 @@
     <h1 class="cont-title" data-aos="fade-up">Proficient Skills</h1>
     <div class="skills-flex">
       <div class="skills-tab skills-grid" data-aos="fade-up">
-        <img src="./assets/icons/html.png" height="60px" alt="" />
-        <img src="./assets/icons/css-3.png" height="60px" alt="" />
-        <img src="./assets/icons/js.png" height="60px" alt="" />
-        <img src="./assets/icons/python.png" height="60px" alt="" />
-        <img src="./assets/icons/java.png" height="60px" alt="" />
-        <img src="./assets/icons/mysql.png" height="60px" alt="" />
-        <img src="./assets/icons/api.png" height="60px" alt="" />
-        <img src="./assets/icons/php.png" height="60px" alt="" />
+        <div class="tab-skill">
+          <h2>Languages</h2>
+          <img
+            src="https://skillicons.dev/icons?i=java,py,js,c,cpp,php,rust,mysql,dart,css,html&theme=dark"
+            alt=""
+          />
+        </div>
+
+        <div class="tab-skill">
+          <h2>Frameworks</h2>
+          <img
+            src="https://skillicons.dev/icons?i=react,electron,nodejs,django,flask,spring,bootstrap,flutter,tailwind,gherkin&theme=dark"
+            alt=""
+          />
+        </div>
+
+        <div class="tab-skill">
+          <h2>DevOps</h2>
+          <img
+            src="https://skillicons.dev/icons?i=git,github,aws,gcp,vim,postman,ubuntu&theme=dark"
+            alt=""
+          />
+        </div>
       </div>
       <p class="lang-img" data-aos="fade-up">
         <img
-          width="500px"
+          width="350px"
           align="center"
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=swarupvishwas18&show_icons=true&locale=en&layout=compact"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=swarupvishwas18&layout=pie&theme=transparent&langs_count=8"
           alt="swarupvishwas18"
         />
       </p>
-      <div data-aos="fade-up" class="commits-img">
-        <img
-          src="https://camo.githubusercontent.com/ebc34deed64f28eb7dad4a98e18b7595ae3987fadb2bf306b0ee4481f85e21e8/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d73776172757076697368776173313826"
-          alt=""
-        />
-      </div>
-      <div data-aos="fade-up" class="other-commit">
-        <img
-          src="https://camo.githubusercontent.com/d5bde971229a5ff885f729f2426818b5df6ffa3ea6be9261a3888800dbe41443/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7377617275707669736877617331382673686f775f69636f6e733d74727565266c6f63616c653d656e"
-          alt=""
-        />
-      </div>
     </div>
 
     <h1 class="cont-title" id="projects" data-aos="fade-up">Projects</h1>
@@ -236,7 +258,7 @@
         <div class="project-image">
           <img
             src="./assets/images/oppen.png"
-            width="400px"
+            width="200px"
             height="200px"
             alt=""
           />
@@ -260,12 +282,12 @@
         <div class="project-image">
           <img
             src="./assets/images/blood.png"
-            width="300px"
+            width="200px"
             height="200px"
             alt=""
           />
         </div>
-        <h2 class="project-head">Blood Bank Management</h2>
+        <h2 class="project-head">Blood Bank Mgt</h2>
         <div class="info">
           CLI based application developed in Python and SQLite database
         </div>
@@ -284,15 +306,14 @@
         <div class="project-image">
           <img
             src="./assets/images/file-transfer.png"
-            width="300px"
+            width="200px"
             height="200px"
             alt=""
           />
         </div>
-        <h2 class="project-head">File Transfer System</h2>
+        <h2 class="project-head">File Transfer</h2>
         <div class="info">
-          Java Swing Project with Client Server connection via Socket and MySQL
-          database
+          Java Swing Project with Client Server via Socket and MySQL database
         </div>
         <div class="stack"><span>Java</span><span>MySQL</span></div>
         <div class="project-link">
@@ -309,7 +330,7 @@
         <div class="project-image">
           <img
             src="./assets/images/spendwise.png"
-            width="400px"
+            width="200px"
             height="200px"
             alt=""
           />
@@ -333,7 +354,7 @@
         <div class="project-image">
           <img
             src="./assets/images/pinote.png"
-            width="400px"
+            width="200px"
             height="200px"
             alt=""
           />
@@ -350,6 +371,121 @@
         <div class="project-link">
           <a
             href="https://swarupvishwas18.github.io/viewProject.html?name=pinote"
+            target="_blank"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+      <div class="index-project-card">
+        <div class="project-image">
+          <img
+            src="./assets/images/familiar.png"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+        </div>
+        <h2 class="project-head">Familiar Face</h2>
+        <div class="info">
+          Profile and Identity Management System with Face Recognition
+        </div>
+        <div class="stack"><span>Python</span><span>SQLite</span></div>
+        <div class="project-link">
+          <a
+            href="https://swarupvishwas18.github.io/viewProject.html?name=blood-bank-management"
+            target="_blank"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+      <div class="index-project-card">
+        <div class="project-image">
+          <img
+            src="./assets/images/reactive.png"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+        </div>
+        <h2 class="project-head">Reactive Keyboard</h2>
+        <div class="info">
+          Recommending places for your needs just from keyboard
+        </div>
+        <div class="stack">
+          <span>Python</span><span>Google Maps</span><span>PyQt6</span>
+        </div>
+        <div class="project-link">
+          <a
+            href="https://swarupvishwas18.github.io/viewProject.html?name=blood-bank-management"
+            target="_blank"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+      <div class="index-project-card">
+        <div class="project-image">
+          <img
+            src="./assets/images/rewardia.png"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+        </div>
+        <h2 class="project-head">Rewardia</h2>
+        <div class="info">CLI Rewards Management productive application</div>
+        <div class="stack"><span>Python</span><span>SQLite</span></div>
+        <div class="project-link">
+          <a
+            href="https://swarupvishwas18.github.io/viewProject.html?name=blood-bank-management"
+            target="_blank"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+      <div class="index-project-card">
+        <div class="project-image">
+          <img
+            src="./assets/images/password.png"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+        </div>
+        <h2 class="project-head">Password Manager</h2>
+        <div class="info">
+          Face Recognition and SHA-256 based password Management system
+        </div>
+        <div class="stack"><span>Python</span><span>OpenCV</span></div>
+        <div class="project-link">
+          <a
+            href="https://swarupvishwas18.github.io/viewProject.html?name=blood-bank-management"
+            target="_blank"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+      <div class="index-project-card">
+        <div class="project-image">
+          <img
+            src="./assets/images/right-aid.png"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+        </div>
+        <h2 class="project-head">Right Aid</h2>
+        <div class="info">
+          System for Undertrial Prisoners that will provide various facilities
+        </div>
+        <div class="stack"><span>Flutter</span><span>Firebase</span></div>
+        <div class="project-link">
+          <a
+            href="https://swarupvishwas18.github.io/viewProject.html?name=blood-bank-management"
             target="_blank"
           >
             View Project
@@ -381,138 +517,127 @@
             name="_autoresponse"
             value="Thank You for Connecting with me, your response matters a lot..!!"
           />
-          <label for="name">Enter your name</label> <br />
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your Name"
-            required
-          />
-          <br />
-          <label for="email">Enter your mail</label> <br />
+          <label for="name">Send me a friendly hello !</label> <br />
           <input
             type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your Email Address"
+            name="name"
+            id="name"
+            placeholder="Enter your Email"
             required
           />
           <br />
-        </div>
-        <div class="form-rs">
+
           <textarea
             name="thoughts"
             id=""
             placeholder="Enter your thoughts"
-            rows="10"
+            rows="3"
             required
           ></textarea
           ><br />
           <input type="submit" value="Submit" />
         </div>
       </form>
-    </div>
+      <div class="qrs">
+        <div id="tg-top" class="top">
+          <div id="tg" class="tg">
+            <img
+              src="./assets/images/TG.jpg"
+              height="200px"
+              alt="Telegram QR"
+            />
+            <a href="https://t.me/lucifer_morningstar_12" target="_blank">
+              <button>Click Here to Connect</button>
+            </a>
+          </div>
+        </div>
 
-    <div class="skills-tab socials-tab">
-      <img
-        src="./assets/icons/telegram.png"
-        id="telegram"
-        height="45px"
-        alt=""
-      />
-      <img
-        src="./assets/icons/instagram.png"
-        id="instagram"
-        height="45px"
-        alt=""
-      />
-      <img src="./assets/icons/twitter.png" id="twitter" height="45px" alt="" />
-      <img src="./assets/icons/github.png" id="github" height="45px" alt="" />
-      <img
-        src="./assets/icons/linkedin.png"
-        id="linkedin"
-        height="45px"
-        alt=""
-      />
-    </div>
+        <div id="in-top" class="top">
+          <div id="tg" class="tg">
+            <img
+              src="./assets/images/instagram-qr.jpg"
+              height="200px"
+              alt="Instagram QR"
+            />
+            <a href="https://www.instagram.com/swarup.vishwas/" target="_blank">
+              <button>Click Here to Connect</button>
+            </a>
+          </div>
+        </div>
 
-    <div id="tg-top" class="top">
-      <div id="tg" class="tg">
-        <h1>Telegram QR</h1>
-        <img src="./assets/images/TG.jpg" height="300px" alt="Telegram QR" />
-        <div class="username">@lucifer_morningstar</div>
-        <a href="https://t.me/lucifer_morningstar_12" target="_blank">
-          <button>Click to Join</button>
-        </a>
-        <button class="close-top">Close</button>
-      </div>
-    </div>
+        <div id="tw-top" class="top">
+          <div id="tg" class="tg">
+            <img
+              src="./assets/images/twitter-qr.jpg"
+              height="200px"
+              alt="Twitter QR"
+            />
+            <a href="https://twitter.com/sdvishwas2312" target="_blank">
+              <button>Click Here to Connect</button>
+            </a>
+          </div>
+        </div>
 
-    <div id="in-top" class="top">
-      <div id="tg" class="tg">
-        <h1>Instagram QR</h1>
-        <img
-          src="./assets/images/instagram-qr.jpg"
-          height="300px"
-          alt="Instagram QR"
-        />
-        <div class="username">@swarup.vishwas</div>
-        <a href="https://www.instagram.com/swarup.vishwas/" target="_blank">
-          <button>Click to Join</button>
-        </a>
-        <button class="close-top">Close</button>
-      </div>
-    </div>
+        <div id="git-top" class="top">
+          <div id="tg" class="tg">
+            <img
+              src="./assets/images/QR GITHUB.png"
+              height="200px"
+              alt="Github QR"
+            />
+            <a href="https://github.com/SwarupVishwas18" target="_blank">
+              <button>Click Here to Connect</button>
+            </a>
+          </div>
+        </div>
 
-    <div id="tw-top" class="top">
-      <div id="tg" class="tg">
-        <h1>Twitter QR</h1>
-        <img
-          src="./assets/images/twitter-qr.jpg"
-          height="300px"
-          alt="Twitter QR"
-        />
-        <div class="username">@sdvishwas2312</div>
-        <a href="https://twitter.com/sdvishwas2312" target="_blank">
-          <button>Click to Join</button>
-        </a>
-        <button class="close-top">Close</button>
-      </div>
-    </div>
-
-    <div id="git-top" class="top">
-      <div id="tg" class="tg">
-        <h1>Github QR</h1>
-        <img
-          src="./assets/images/QR GITHUB.png"
-          height="300px"
-          alt="Github QR"
-        />
-        <div class="username">@SwarupVishwas18</div>
-        <a href="https://github.com/SwarupVishwas18" target="_blank">
-          <button>Click to Join</button>
-        </a>
-        <button class="close-top">Close</button>
-      </div>
-    </div>
-
-    <div id="li-top" class="top">
-      <div id="tg" class="tg">
-        <h1>Linked In QR</h1>
-        <img
-          src="./assets/images/linkedin-qr.png"
-          height="300px"
-          alt="Linked In QR"
-        />
-        <div class="username">Swarup Vishwas</div>
-        <a
-          href="https://www.linkedin.com/in/swarup-vishwas-8895221b9/"
-          target="_blank"
-        >
-          <button>Click to Join</button>
-        </a>
-        <button class="close-top">Close</button>
+        <div id="li-top" class="top">
+          <div id="tg" class="tg">
+            <img
+              src="./assets/images/linkedin-qr.png"
+              height="200px"
+              alt="Linked In QR"
+            />
+            <a
+              href="https://www.linkedin.com/in/swarup-vishwas-8895221b9/"
+              target="_blank"
+            >
+              <button>Click Here to Connect</button>
+            </a>
+          </div>
+        </div>
+        <div class="socials-tab">
+          <img
+            src="./assets/icons/telegram.png"
+            id="telegram"
+            height="45px"
+            alt=""
+          />
+          <img
+            src="./assets/icons/instagram.png"
+            id="instagram"
+            height="45px"
+            alt=""
+          />
+          <img
+            src="./assets/icons/twitter.png"
+            id="twitter"
+            height="45px"
+            alt=""
+          />
+          <img
+            src="./assets/icons/github.png"
+            id="github"
+            height="45px"
+            alt=""
+          />
+          <img
+            src="./assets/icons/linkedin.png"
+            id="linkedin"
+            height="45px"
+            alt=""
+          />
+        </div>
       </div>
     </div>
 

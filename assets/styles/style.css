@@ -2,13 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Oswald:wght@200..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
 @font-face {
     font-family: 'madrigal';
     src: url('../font/Madrigal-mLJ92.ttf');
 }
 :root{
-    --bg-col: #161b21;
-    --nav-bg: #0d1017;
+    --bg-col: #202125;
+    --nav-bg: #2d2f31;
     --cols: #d3ddda;
     --link-col: #ABB2BF;
 }
@@ -17,7 +20,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter';
+    font-family: 'Jura';
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
     /* cursor: pointer; */
@@ -44,7 +47,7 @@ body{
 }
 
 h1{
-    font-family: 'Cinzel', serif;
+    font-family: "Jura", sans-serif;
 }
 
 .rs{
@@ -56,7 +59,6 @@ h1{
 }
 
 .logo h1{
-    font-family: 'Kolker Brush', cursive;
     font-size: 2rem;
     letter-spacing: .2rem;
     color: var(--cols);
@@ -99,10 +101,9 @@ ul.links{
     justify-content: center;
     gap: 2rem;
     list-style: none;
-    background-color: #00000067;
+    background-color: var(--nav-bg);
     padding: 1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-radius: 5px;
 }
 
 .course-section{
@@ -170,8 +171,8 @@ section.movie-details{
 }
 
 button{
-    font-family: 'Inter', sans-serif;
-    
+    font-family: 'Jura', sans-serif;
+    font-weight: bolder;
 }
 
 article.movie-body{
@@ -240,7 +241,7 @@ input[type='submit']{
 } */
 
 .name{
-    font-family: 'Roboto Mono';
+    font-family: "Jura", sans-serif;
 }
 
 
@@ -536,7 +537,7 @@ blockquote{
 }
 
 .banner-sub{
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Jura", sans-serif;
     font-size: 1rem;
 }
 
@@ -670,11 +671,27 @@ main.form div{
 }
 
 .projects-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
     padding: 5%;
+    margin: 1rem;
 }
+
+.projects-grid::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.projects-grid::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.projects-grid::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
 
 .index-project-card{
     display: flex;
@@ -682,6 +699,30 @@ main.form div{
     gap: 1rem;
     padding: 2rem;
     background-color: var(--nav-bg);
+    border-radius: 16px;
+    box-shadow: -1rem 0 5rem #090909;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+    width: 500px;
+    min-width: 350px;
+    padding: 1.5rem;
+}
+
+.index-project-card:focus-within~.index-project-card, .index-project-card:hover~.index-project-card {
+    transform: translateX(130px);
+}
+
+.index-project-card:hover {
+    transform: translateY(-1rem);
+}
+
+.index-project-card:not(:first-child) {
+    margin-left: -130px;
 }
 
 .index-project-card .project-image{
@@ -696,9 +737,9 @@ main.form div{
     font-size: small;
     margin-right: 12px;
     padding: 5px;
-    background-color: var(--link-col);
+    background-color: var(--bg-col);
     border-radius: 7px;
-    color: var(--bg-col);
+    color: var(--link-col);
 }
 
 
@@ -714,12 +755,11 @@ main.form div{
 
 .project-link a{
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 #email:focus, #pwd:focus, #name:focus{
     outline: none;
-    border: 1px solid goldenrod;
 }
 
 .swarup-vishwas{
@@ -730,15 +770,33 @@ main.form div{
 
 
 .socials-tab{
+    display: flex;
     align-items: flex-start;
+    flex-direction: column;
+    gap: .5rem;
     text-align: justify;
-    justify-content: left;
-    gap: 3rem;
+    justify-content: space-around;
     justify-self: flex-start;
 }
 
-.form-rs{
+.form-ls{
     text-align: center;
+}
+
+.qrs{
+    background-color: var(--nav-bg);
+    padding: 1rem;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: row-reverse;
+}
+
+#tg-top {
+    display: flex;
+}
+
+.top img{
+    border-radius: 12px ;
 }
 
 .google-link{
@@ -775,7 +833,6 @@ main.form div{
 }
 
 header.img-bk{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.574), rgba(0, 0, 0, 0.382)),url('../images/key.jpg');
     color: var(--bg-col);
     background-position: center;
     background-repeat: no-repeat;
@@ -893,6 +950,8 @@ button, .more-link a{
         gap: .4rem;
     }
     
+ 
+
     ul.cast{
         grid-template-columns: 1fr;
     }
@@ -1046,10 +1105,16 @@ h3{
     gap: 1rem;
 }
 
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .contact-form form{
     /* text-align: center; */
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -1076,7 +1141,6 @@ textarea{
 
 textarea:focus{
     outline: none;
-    border: 1px solid goldenrod;
 }
 .form input, .form button{
     background-color: var(--nav-bg);
@@ -1126,7 +1190,7 @@ textarea:focus{
 .banner-body{
     /* font-size: 2rem; */
     font-weight: bold;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Jura", sans-serif;
 }
 
 .upper-main{
@@ -1159,22 +1223,30 @@ textarea:focus{
     
 }
 
-
+.tab-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
 
 .skills-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     /* background-color: var(--cols); */
-    padding: 3rem;
     border-radius: 12px;
 }
+
+
 
 .skills-flex{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
 }
@@ -1187,10 +1259,6 @@ textarea:focus{
     border-radius: 6px;
 }
 
-.skills-tab img:hover{
-    background-color: var(--bg-col);
-    transform: scale(1.2);
-}
 
 .contact-main{
     min-height: 100vh;
@@ -1233,7 +1301,7 @@ textarea:focus{
 
 .lang-img{
     text-align: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .top .tg{
@@ -1247,7 +1315,6 @@ textarea:focus{
 }
 
 .swarup-vishwas::after{
-    content: '👨‍💻';
     animation-name: opMan;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -1374,10 +1441,7 @@ textarea:focus{
         flex-direction: column;
     }
 
-    .skills-flex{
-        grid-template-columns: 1fr;
-        align-items: center;
-    }
+    
 
     /* .skills-tab{
         display: grid;
