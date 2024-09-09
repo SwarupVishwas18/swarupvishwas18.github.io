@@ -1352,6 +1352,10 @@ textarea:focus{
     color: #ABB2BF;
 }
 
+.skills-grid-mob{
+    display: none;
+}
+
 /* Small Devices Media Query */
 
 @media screen and (max-width: 900px) {
@@ -1378,6 +1382,23 @@ textarea:focus{
     .img-course img{
         width: inherit;
     }
+
+    .skills-grid-mob{
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .skills-grid-pc{
+        display: none;
+    }
+
+    .skills-flex{
+        grid-template-columns: 1fr;
+    }
   
     .cont-title{
         font-size: 2rem;
@@ -1391,6 +1412,14 @@ textarea:focus{
         align-items: center;
         justify-content: space-around;
     }
+
+    .qrs{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
     .contact-form form{
         flex-direction: column;
         align-items: center;
